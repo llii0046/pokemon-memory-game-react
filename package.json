@@ -1,6 +1,7 @@
 {
-  "name": "react-memory-game",
+  "name": "pokemon-memory-game",
   "version": "0.1.0",
+  "author" : "Luxing Li <luxingg.li@gmail.com>",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",

@@ -1,0 +1,73 @@
+@keyframes matchAnim {
+    0% {
+        background: #bcffcc;
+    }
+    100% {
+        background: white;
+    }
+}
+
+.card {
+    float: left;
+    width: 12.5%;
+    padding: 5px;
+    text-align: center;
+    display: block;
+    perspective: 500px;
+    position: relative;
+    cursor: pointer;
+    z-index: 50;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    padding-bottom: 17%;
+}
+
+@media (max-width: 800px) {
+    .card {
+        width: 25%;
+    }
+}
+
+.card .inside {
+    width: 100%;
+    display: block;
+    transform-style: preserve-3d;
+    transition: 0.4s ease-in-out;
+    background: white;
+}
+
+.card .inside.picked,
+.card .inside.matched {
+    transform: rotateY(180deg);
+}
+
+.card .inside.matched {
+    animation: 1s matchAnim ease-in-out;
+    animation-delay: 0.4s;
+}
+
+.card .front,
+.card .back {
+    border: 1px solid black;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.card .front img,
+.card .back img {
+    width: 100%; 
+    height: auto;  
+    display: block;
+    margin: 0 auto;
+}
+
+.card .front {
+    transform: rotateY(-180deg);
+}
+
+.card .back {
+    transform: rotateX(0);
+}
