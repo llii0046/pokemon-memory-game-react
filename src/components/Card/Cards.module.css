@@ -2,6 +2,7 @@
     0% {
         background: #bcffcc;
     }
+
     100% {
         background: white;
     }
@@ -10,7 +11,7 @@
 .card {
     float: left;
     width: 12.5%;
-    padding: 5px;
+    padding: 3px;
     text-align: center;
     display: block;
     perspective: 500px;
@@ -18,13 +19,13 @@
     cursor: pointer;
     z-index: 50;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    padding-bottom: 17%;
+    height: calc(100%/3 + 25px)
 }
 
 @media (max-width: 800px) {
     .card {
         width: 25%;
-        padding-bottom: 35%
+        height: calc(100%/5)
     }
 }
 
@@ -59,8 +60,8 @@
 
 .card .front img,
 .card .back img {
-    width: 100%; 
-    height: auto;  
+    width: 100%;
+    height: auto;
     display: block;
     margin: 0 auto;
 }
