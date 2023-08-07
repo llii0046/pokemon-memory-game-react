@@ -24,6 +24,7 @@
 @media (max-width: 800px) {
     .card {
         width: 25%;
+        padding-bottom: 35%
     }
 }
 

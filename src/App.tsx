@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { cards } from './data/cards';
 import ICard from './interface/card';
-import { ModalOverlay, Card } from './components'
+import { ModalOverlay, Card, Header} from './components'
 import './styles/global.css'
 
 const shuffle = (array: ICard[]): ICard[] => {
@@ -76,21 +76,24 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className="wrap">
-      <div className="game">
-        {cardsArray.map((card, index) => (
-          <Card
-            key={`${index}-${card.id}`}
-            card={card}
-            index={index}
-            isPicked={pickedCards.includes(index)}
-            isMatched={matchedCards.includes(index)}
-            cardClicked={cardClicked}
-          />
-        ))}
-      </div>
-      <ModalOverlay visible={allMatched} onReset={reset} />
-    </div>
+    <>
+      <Header />
+      <main>
+        <div className="wrap">
+            {cardsArray.map((card, index) => (
+              <Card
+                key={`${index}-${card.id}`}
+                card={card}
+                index={index}
+                isPicked={pickedCards.includes(index)}
+                isMatched={matchedCards.includes(index)}
+                cardClicked={cardClicked}
+              />
+            ))}
+          </div>
+          <ModalOverlay visible={allMatched} onReset={reset} />
+      </main>
+    </>
   );
 }
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './styles.module.css';
+import styles from './ModelOverlay.module.css';
 
 interface ModalOverlayProps {
     visible: boolean;
@@ -8,7 +8,7 @@ interface ModalOverlayProps {
 
 const ModalOverlay: React.FC<ModalOverlayProps> = ({ visible, onReset }) => {
     if (!visible) return null;
-    
+
     return (
         <div className={styles.modalOverlay}>
             <div className={styles.modal}>

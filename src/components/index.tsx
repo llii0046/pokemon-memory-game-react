@@ -1,4 +1,4 @@
 import ModalOverlay from './ModelOverlay/ModelOverlay';
 import Card from './Card/Card';
-
-export {ModalOverlay,  Card}
+import Header from './Header/Header';
+export { ModalOverlay, Card, Header, }

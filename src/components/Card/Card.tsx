@@ -1,7 +1,7 @@
 import React from 'react';
 import ICard from '../../interface/card';
 import CardBack from '../../assets/images/pokemon_card_back.jpg';
-import styles from './styles.module.css';
+import styles from './Cards.module.css';
 
 interface CardProps {
   card: ICard;
