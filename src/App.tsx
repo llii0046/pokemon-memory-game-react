@@ -52,7 +52,6 @@ const App: React.FC = () => {
   };
 
   const cardClicked = (index: number): void => {
-    const id = cardsArray[index].id;
     if (!pickedCards.includes(index)) {
       if (guess === null) {
         setGuess(index);
