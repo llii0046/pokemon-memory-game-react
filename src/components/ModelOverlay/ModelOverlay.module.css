@@ -5,6 +5,7 @@
     left: 0;
     width: 100%;
     height: 100%;
+    z-index: 9999;
 }
 
 .modal {
@@ -15,9 +16,9 @@
     max-width: 90%;
     min-height: 380px;
     margin: 0 auto;
-    background: #f3f3f3; 
-    border: 8px solid #f9dc5c; 
-    box-shadow: 0 5px 15px rgba(0, 0, 0, .3); 
+    background: #f3f3f3;
+    border: 8px solid #f9dc5c;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .3);
     top: 50%;
     transform: translateY(-50%);
     padding: 30px 10px;
@@ -28,7 +29,7 @@
     font-size: 40px;
     text-align: center;
     font-family: "Anton", sans-serif;
-    color: #d33f49; 
+    color: #d33f49;
     text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
 }
 
@@ -45,10 +46,10 @@
     display: block;
     font-size: 24px;
     border: none;
-    background: #d33f49; 
+    background: #d33f49;
     background: linear-gradient(#d33f49, #8b2323);
     border: 1px solid #8b2323;
-    border-radius: 50px; 
+    border-radius: 50px;
     color: white;
     text-shadow: 0px 1px 0 black;
     cursor: pointer;
@@ -57,7 +58,7 @@
 
 .modal .restart:hover {
     background: linear-gradient(#8b2323, #d33f49);
-    transform: scale(1.05); 
+    transform: scale(1.05);
 }
 
 .modal .message {
@@ -75,4 +76,3 @@
     color: #56c0eb;
     border-bottom: 1px dotted #56c0eb;
 }
-
